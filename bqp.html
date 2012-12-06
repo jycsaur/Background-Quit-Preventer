@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Catch page close</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+ 
+<body>
+<p> Leave this page open in the background </p> 
+<!--
+<button id="reload">Refresh a Page in jQuery</button>
+-->
+<script type="text/javascript">
+ 
+	$('#reload').click(function() {
+ 
+	 	location.reload();
+ 
+	});
+ 
+	$(window).bind('beforeunload', function(){
+		return 'Did you accidentally close this window?';
+	});
+ 
+</script>
+ 
+</body>
+</html>
