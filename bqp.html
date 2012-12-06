@@ -10,12 +10,6 @@
 <p> Use <a href="http://htmlpreview.github.com/?https://raw.github.com/jycsaur/Background-Quit-Preventer/master/bqp.html">this</a> to view github page directly </p>
 <script type="text/javascript">
  
-	$('#reload').click(function() {
- 
-	 	location.reload();
- 
-	});
- 
 	$(window).bind('beforeunload', function(){
 		return 'Did you accidentally close this window?';
 	});
